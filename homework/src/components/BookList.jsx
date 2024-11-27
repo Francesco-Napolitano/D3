@@ -1,12 +1,12 @@
 import SingleBook from "./SingleBook";
 
-const BookList = ({ ArrayLibri }) => { // Destruttura l'array passato come prop
+const BookList = ({ ArrayLibri }) => {
    return (
       <>
          {ArrayLibri.map((book) => (
             <SingleBook
-               key={book.asin} // Usa una chiave unica
-               book={book}     // Passa il singolo libro come prop
+               key={book.asin}
+               book={book}
             />
          ))}
       </>
@@ -14,3 +14,4 @@ const BookList = ({ ArrayLibri }) => { // Destruttura l'array passato come prop
 };
 
 export default BookList;
+

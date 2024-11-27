@@ -2,7 +2,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyNav from './components/MyNav'
 import BookList from './components/BookList'
-import libri from './data/fantasy.json' // Importa correttamente il JSON
+import libri from './data/fantasy.json'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <MyNav />
       </header>
       <main>
-        <BookList ArrayLibri={libri} /> {/* Passa il JSON come prop */}
+        <BookList ArrayLibri={libri} />
       </main>
     </div>
   )
